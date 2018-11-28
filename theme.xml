@@ -1,0 +1,233 @@
+<!--
+theme name:     PiTube
+creator:		Dwayne Hurst (aka Hursty)
+version         1.0 October 2018
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>4</formatVersion>
+
+<feature supported="carousel">
+   <view name="system">
+      <carousel name="systemcarousel">
+        <type>horizontal</type>
+        <pos>0.0 0.332</pos>
+        <size>1 1</size>
+        <logoScale>1.2</logoScale>
+         <zIndex>44</zIndex>          
+        <logoSize>0.26 0.22</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>5</maxLogoCount>
+      </carousel>
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>40</zIndex>                 
+         <path>./_inc/images/main.png</path>
+      </image>                      
+      <text name="systemInfo">
+         <zIndex>44</zIndex>       
+         <pos>0.0 0.735</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <color>000000</color>
+         <fontPath>./_inc/fonts/batmfa__.ttf</fontPath>
+	     <fontSize>0.013</fontSize>
+         <zIndex>44</zIndex>	     
+      </text>            
+   </view>
+</feature>
+
+   <view name="detailed,video,basic">
+      <helpsystem name="help">
+         <fontPath>./_inc/fonts/batmfa__.ttf</fontPath>
+         <fontSize>0.015</fontSize>      
+         <pos>0.41 0.975</pos>      
+         <textColor>f5ce14</textColor>
+         <iconColor>f5ce14</iconColor>
+      </helpsystem>
+   </view>  
+   
+   <view name="system">
+      <helpsystem name="help">
+         <fontPath>./_inc/fonts/batmfa__.ttf</fontPath>
+         <fontSize>0.02</fontSize>     
+         <pos>0.28 0.97</pos>      
+         <textColor>f5ce14</textColor>
+         <iconColor>f5ce14</iconColor>
+      </helpsystem>
+   </view>   
+
+   <view name="detailed,video">
+      <textlist name="gamelist">      
+         <selectorColor>1c1c1c00</selectorColor>                     
+         <pos>0.61 0.029</pos>
+         <size>0.375 0.7</size>
+         <selectedColor>ff0000</selectedColor>
+         <primaryColor>f5ce14</primaryColor>
+         <secondaryColor>f5ce14</secondaryColor>
+         <fontPath>./_inc/fonts/batmfa__.ttf</fontPath>
+         <fontSize>0.038</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound></scrollSound>
+         <alignment>left</alignment>
+         <zIndex>42</zIndex>                          
+      </textlist>
+   </view>
+     
+   
+   <view name="basic">
+      <image name="logo">
+         <pos>0.31 0.02</pos>
+         <maxSize>0.19 0.17</maxSize>
+         <zIndex>44</zIndex>         
+      </image>   
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/images/basic.png</path>
+      </image>
+      <textlist name="gamelist">      
+         <selectorColor>1c1c1c00</selectorColor>                     
+         <pos>0.43 0.029</pos>
+         <size>0.5 0.92</size>
+         <selectedColor>ff0000</selectedColor>
+         <primaryColor>f5ce14</primaryColor>
+         <secondaryColor>f5ce14</secondaryColor>
+         <fontPath>./_inc/fonts/batmfa__.ttf</fontPath>
+         <fontSize>0.038</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound></scrollSound>
+         <alignment>left</alignment>
+         <zIndex>42</zIndex>                          
+      </textlist>                      
+   </view> 
+     
+
+   <view name="detailed,video">
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>       
+         <path>./_inc/images/videobottom.png</path>
+         <zIndex>40</zIndex> 
+      </image>
+      <image name="background2" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>       
+         <path>./_inc/images/videotop.png</path>
+         <zIndex>45</zIndex> 
+      </image>             
+      <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_rating, md_developer, md_publisher, md_genre, md_playcount, md_lastplayed">
+         <pos>1 1</pos>
+      </text>
+      <text name="md_lbl_rating,md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount,md_lbl_players,md_developer, md_publisher, md_genre, md_playcount, md_lastplayed,md_description,md_players,md_releasedate">
+         <color>ff0000</color>
+         <fontPath>./_inc/fonts/batmfa__.ttf</fontPath>
+         <fontSize>0.025</fontSize>
+      </text>
+      <text name="md_lbl_rating">
+         <pos>0.27 0.352</pos>
+         <size>0.2 0.035</size>
+         <color>f5ce14</color>         
+         <zIndex>42</zIndex>         
+      </text>
+      <rating name="md_rating">
+         <zIndex>44</zIndex>       
+         <pos>0.4 0.352</pos>
+         <size>0.2 0.035</size>
+         <filledPath>./_inc/images/star_filled.png</filledPath>
+         <unfilledPath>./_inc/images/star_empty.png</unfilledPath>
+         <zIndex>42</zIndex>         
+      </rating>
+      <text name="md_lbl_players">
+         <pos>0.27 0.22</pos>
+         <size>0.2 0.035</size>
+         <color>f5ce14</color>
+         <zIndex>42</zIndex>                  
+      </text>
+      <text name="md_players">
+         <pos>0.4 0.22</pos>
+         <size>0.2 0.035</size>
+         <zIndex>42</zIndex>         
+      </text>
+      <text name="md_lbl_releasedate">
+         <pos>0.27 0.2525</pos>
+         <size>0.2 0.035</size>
+         <color>f5ce14</color>
+         <zIndex>42</zIndex>                  
+      </text>
+      <datetime name="md_releasedate">
+         <pos>0.4 0.2525</pos>
+         <size>0.2 0.035</size>
+         <zIndex>42</zIndex>         
+      </datetime>
+      <text name="md_lbl_genre">
+         <pos>0.27 0.285</pos>
+         <size>0.2 0.035</size>
+         <color>f5ce14</color>
+         <zIndex>42</zIndex>                   
+      </text>
+      <text name="md_genre">
+         <pos>0.4 0.285</pos>
+         <size>0.15 0.035</size>
+         <zIndex>42</zIndex>         
+      </text>         
+      <text name="md_lbl_developer">
+         <pos>0.27 0.32</pos>
+         <size>0.2 0.035</size>
+         <color>f5ce14</color>
+         <zIndex>42</zIndex>                   
+      </text>
+      <text name="md_developer">
+         <pos>0.4 0.32</pos>
+         <size>0.15 0.035</size>
+         <zIndex>42</zIndex>                  
+      </text>
+      <text name="md_description">
+         <fontSize>0.02</fontSize>      
+         <color>f5ce14</color>      
+         <pos>0.61 0.758</pos>
+         <size>0.37 0.16</size>
+         <zIndex>44</zIndex>         
+      </text>
+   </view>
+
+   <view name="detailed">
+      <image name="logo">
+         <pos>0.31 0.02</pos>
+         <maxSize>0.19 0.17</maxSize>
+         <zIndex>44</zIndex>           
+      </image>   
+      <image name="md_image">
+         <pos>0.407 0.65</pos>
+         <maxSize>0.5 0.4</maxSize>
+         <zIndex>44</zIndex>         
+      </image>      
+   </view>
+
+   <view name="video"> 
+      <image name="logo">
+         <pos>0.31 0.02</pos>
+         <maxSize>0.19 0.17</maxSize>
+         <zIndex>44</zIndex>         
+      </image>     
+      <video name="md_video">
+         <pos>0.407 0.65</pos>
+         <maxSize>0.5 0.4</maxSize>
+         <delay>1.0</delay>
+         <zIndex>44</zIndex>         
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+      </video>
+      <image name="md_marquee">
+         <pos>0.49 0.1</pos>
+         <maxSize>0.16 0.11</maxSize>
+         <zIndex>44</zIndex>         
+      </image>             
+   </view>
+   
+</theme>
